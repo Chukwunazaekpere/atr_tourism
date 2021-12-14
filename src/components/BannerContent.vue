@@ -6,7 +6,7 @@
         <div class="row mt-5"></div>
         <div class="row mt-4"></div>
 
-        <div class="row mt-5 content">
+        <div class="animate__animated animate__flash row mt-5 content">
             <div class="col-md-4 col-sm-12 col-xs-12 text_container">
                 <span class="text-center banner_text1">ATR</span> <br />
                 <span class="text-center banner_text2">Tourism</span>
@@ -19,7 +19,7 @@
             <div class="col-5">
                 <p class="form_text py-2 col-12">Talk to us...</p>
                 <div class="form-group" v-for="props in fieldProps" :key="props.name" >
-                    <span  v-if="props.type !== 'textarea'">
+                    <span style="flex-direction: row;" v-if="props.type !== 'textarea'">
                         <input 
                             :placeholder="props.name" 
                             :type="props.type" 
@@ -80,9 +80,10 @@
         justify-content: flex-end;
         border: 2px solid #fff;
         background-color: transparent;
-        color: aliceblue;
+        color: ghostwhite;
         font-size: 20px;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
         /* float: right; */
     }
     .text_container {
@@ -113,6 +114,10 @@
         background-color: #ffce3e !important;
         color: #000 !important;
         font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    button:hover {
+        background-color: #ffce3e!important;
+        border: 2px solid #fff;
     }
     .form_text {
         font-family: Georgia;

@@ -2,7 +2,8 @@
     <div class="header mt-2">
         <header :key="item.name" v-for="item in contacts">
             <span>
-                {{item.name}}: 
+                {{item.name}}:
+                {{item.value}}
                 <i :class="item.icon" ></i>
             </span>
         </header>
@@ -15,13 +16,13 @@
         data() {
             return {
                 contacts: [
-                    {name: "Phone", icon: "fa-duotone fa-phone"},
-                    {name: "Email", icon: ""},
-                    {name: "Office address", icon: ""},
+                    {name: "Phone", icon: "fas fa-duotone fa-phone", value: "+2348122222222"},
+                    {name: "Email", icon: "fas fa-envelope-open-text", value: "tantallum@gmail.com"},
+                    {name: "Office address", icon: "fas fa-map-marker-alt", value: "75 office plaza Hafnium close"},
                 ]
             }
         }
-    }
+    };
 </script>
 
 <style>
@@ -33,6 +34,9 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         flex-direction: row;
         font-weight: bold;
+    }
+    i {
+        font-size: 25px;
     }
 </style>
 

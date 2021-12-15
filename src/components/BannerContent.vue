@@ -2,8 +2,8 @@
     <div class="container" data-aos="fade-up" data-aos-delay="400">
         <Header />
         <div class="row mt-5"></div>
-        <div class="row mt-5"></div>
-        <div class="row mt-5"></div>
+        <div class="row mt-md-5 mt-sm-3"></div>
+        <div class="row mt-md-5 mt-sm-3"></div>
         <div class="row mt-4"></div>
 
         <div class="animate__animated animate__flash row mt-5 content">
@@ -16,7 +16,7 @@
                 </span>
                 <span class="col-6 lower_bar"></span>
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-xs-12 col-sm-12">
                 <p class="form_text py-2 col-12">Talk to us...</p>
                 <div class="form-group" v-for="props in fieldProps" :key="props.name" >
                     <span style="flex-direction: row;" v-if="props.type !== 'textarea'">
@@ -27,7 +27,7 @@
                             required="true"
                         />
                     </span>
-                    <span :key="props.name" v-else>
+                    <span v-else>
                         <textarea 
                             class="form-control" 
                             :key="props.name" 
@@ -36,7 +36,6 @@
                         />
                     </span>
                 </div>
-                
                 <button class=" mt-2 col-3 btn btn- px-4 send_button">
                     Send
                 </button>

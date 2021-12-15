@@ -1,12 +1,14 @@
 <template>
-    <div class="header mt-2">
-        <header :key="item.name" v-for="item in contacts">
-            <span>
-                {{item.name}}:
-                {{item.value}}
-                <i :class="item.icon" ></i>
-            </span>
-        </header>
+    <div class="row">
+        <div class="header mt-2">
+                <header :key="item.name" v-for="item in contacts">
+                <span class="col-sm-10 col-xs-10">
+                    {{item.name}}:
+                    {{item.value}}
+                    <i :class="item.icon" ></i>
+                </span>
+            </header>
+        </div>
     </div>
 </template>
 

@@ -1,23 +1,16 @@
 <template>
-  <Banner />
-  <History />
-  <!-- <Footer /> -->
+  <HomeScreen/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import Footer from "@/components/Footer.vue";
-import Banner from "@/components/Banner.vue";
-import History from "@/components/History.vue";
-
+import HomeScreen from "./components/HomeScreen.vue";
 
 export default defineComponent({
-  name: "App",
-  components: {
-    // Footer,
-    History,
-    Banner,
-  },
+    name: "App",
+    components: {
+        HomeScreen
+    },
 });
 </script>
 

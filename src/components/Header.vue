@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="header mt-2">
+        <div class="header mt-1">
                 <header :key="item.name" v-for="item in contacts">
                 <span class="col-sm-10 col-xs-10">
                     {{item.name}}:
@@ -36,6 +36,7 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         flex-direction: row;
         font-weight: bold;
+        position: sticky;
     }
     i {
         font-size: 25px;
